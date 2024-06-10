@@ -10,7 +10,7 @@ public sealed class Division : Operation
     public override double Run(params double[] numbers)
     {
         double result = numbers[0];
-        for (int i = 1; i < numbers.Length; i++)
+        for (int i = 1; i !=NumCount; i++)
         {
             result /= numbers[i];
         }

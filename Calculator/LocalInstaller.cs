@@ -42,7 +42,9 @@ internal class LocalInstaller : IWindsorInstaller
             Component.For<Operation>()
                      .ImplementedBy<Sin>(),
             Component.For<Operation>()
-                     .ImplementedBy<Tg>()
+                     .ImplementedBy<Tg>(),
+            Component.For<Operation>()
+                     .ImplementedBy<Degree>()
         );
     }
 }
